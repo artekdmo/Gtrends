@@ -17,6 +17,7 @@ config <- yaml.load_file('config.txt')
 terms <- c("amazon")
 
 #call to trends scraper to pull trends
+#out <- gtrend_scraper("email@gmail.com", "password", terms)
 out <- gtrend_scraper(config$uname, config$pwrd, terms)
 
 #extract the trend from the returned data
